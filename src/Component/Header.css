@@ -1,0 +1,17 @@
+.header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.11),
+      rgba(0, 0, 0, 0.13)
+    ),
+    url("innoson car-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 90vh;
+  width: 100%;
+}
+
+.header-description {
+  color: silver;
+}
