@@ -7,11 +7,23 @@
     url("innoson car-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 
-  height: 90vh;
+  height: 83vh;
   width: 100%;
 }
 
 .header-description {
   color: silver;
+}
+
+.banner_fade {
+  height: 5rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(20, 20, 20, 0.61),
+    black
+  );
+  margin-top: -4rem;
 }

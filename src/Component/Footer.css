@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 .row:not(:last-child) {
-  margin-bottom: 8rem;
+  /* margin-bottom: 8rem; */
 }
 .row::after {
   content: "";
@@ -32,4 +32,42 @@
 }
 .col-1-4:not(:last-child) {
   margin-right: 6rem;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding: 20px;
+}
+
+.footer-list {
+  list-style: none;
+}
+.footer-p {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 5.5rem;
+  letter-spacing: -1px;
+  text-shadow: 1rem 2rem 3rem black;
+}
+
+.footer__list-child {
+  line-height: 1.3rem;
+  color: gray;
+}
+
+.center-text {
+  text-align: left;
+}
+
+.wrap {
+  border-bottom: 0.002px solid rgba(0, 0, 255, 0.5);
+  display: block;
+}
+
+.space {
+  margin-top: 2rem;
+}
+
+.widerSpace {
+  margin-top: 4rem;
 }

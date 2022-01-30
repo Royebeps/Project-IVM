@@ -3,22 +3,28 @@ import "./Introduction.css";
 
 function Introduction() {
     return (
-        <div>
-            <div className="introduction">
-                <h2 className="introduction-heading">
-                    Welcome to the Largest Automobile production Comany in Africa
+        <div className="introduction center-content margin-bottom-big">
+            <div className=" ">
+                <h2 className="introduction-heading margin-bottom">
+                    Welcome to the Largest Automobile production Comany 
                 </h2>
+                <div className="center">
+                    <h2 className="introduction-heading ">in Africa</h2>
+                    </div>
                 <p className="introduction-paragraph">
 Our product range from hold o hold on......Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nam ipsum nobis ea, architecto maxime culpa eligendi incidunt sunt eos quis nulla dolorum, atque iure maiores quaerat consectetur perspiciatis. Nullarem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nam ipsum nobis ea, architecto maxime culpa eligendi incidunt sunt eos quis nulla dolorum, atque iure maiores quaerat consectetur perspiciati. 
                 </p>
+                
             </div>
-            <button> Our other brands</button>
             
-            <div>
-                <ul><li>box1</li>
-                    <li>box2</li>
-                    <li>box3</li>
-                    <li>box4</li>
+            <div className="center-content">
+                <button className="btn"> Our other brands</button>
+            </div>
+            <div className="center-content">
+                <ul className="list-style"><li className="introduction-box box-2">box2</li>
+                    <li className="introduction-box box-1">box1</li>
+                    <li className="introduction-box box-3">box3</li>
+                    <li className="introduction-box box-4">box4</li>
                 </ul>
             </div>
 

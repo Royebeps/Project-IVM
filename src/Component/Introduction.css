@@ -1,13 +1,87 @@
 .introduction-heading {
   text-align: center;
+  display: inline-block;
+  font-size: 2.8rem;
+  letter-spacing: -3px;
+  color: white;
+  line-height: 3rem;
+  border-bottom: 0.2px solid rgba(0, 0, 255, 0.5);
 }
-
+.center {
+  text-align: center;
+}
 .introduction-paragraph {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  line-height: 20px;
 }
 
 .introduction {
-  margin-top: 4rem;
+  height: 100vh;
+  margin-top: 7rem;
   padding-bottom: 3rem;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.introduction-box {
+  border: 0.2px rgba(0, 0, 255, 0.5) solid;
+  height: 4rem;
+  width: 20%;
+  padding: 2rem;
+}
+
+.btn {
+  padding: 7px;
+  background-color: gray;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  position: relative;
+  top: 40px;
+}
+.center-content {
+  justify-content: center;
+  text-align: center;
+}
+
+.list-style {
+  list-style: none;
+  transform: translateY(70px);
+  display: block;
+  position: relative;
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.box-1 {
+  position: absolute;
+  left: 36%;
+  top: 3rem;
+}
+
+.box-2 {
+  position: relative;
+  left: 67%;
+  top: 7.6rem;
+  height: 9rem;
+}
+.box-3 {
+  position: relative;
+  bottom: 5rem;
+  left: 5%;
+  height: 9rem;
+}
+
+.box-4 {
+  position: relative;
+  left: 35.7%;
+  bottom: 10rem;
+}
+
+.margin-bottom-big {
+  margin-bottom: 12rem;
 }

@@ -1,0 +1,10 @@
+.location {
+  font-size: 1.1rem;
+  line-height: 20px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.location-container {
+  margin-top: 90px;
+  /* height: 70vh; */
+}

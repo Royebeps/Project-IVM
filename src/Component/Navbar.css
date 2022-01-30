@@ -4,13 +4,11 @@
   box-sizing: 0;
 }
 .navbar {
+  height: 6rem;
   background-color: black;
   color: silver;
-  /* justify-content: center; */
   text-align: center;
-  padding: 1rem;
 }
-
 .navbar-list {
   list-style: none;
   display: flex;
@@ -18,22 +16,27 @@
   font-weight: 300;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif\;;
+  justify-content: space-between;
 }
 
 .navbar-logo {
-  margin-right: 3rem;
+  margin-left: 3rem;
+  margin-top: -0.5rem;
 }
 
 .navbar-list-components-container {
-  /* justify-content: right; */
   display: flex;
-  margin-left: 20rem;
+  margin-right: 3rem;
 }
 .navbar-list-components {
   margin-right: 35px;
   margin-top: 30px;
+  font-size: 1.35rem;
+  font-weight: 600;
 }
 
 .logo {
   height: 3.8rem;
+  border-radius: 5px;
+  background-blend-mode: saturation;
 }
