@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.slidershow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  transition: 0.4s;
+}

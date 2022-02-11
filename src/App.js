@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link, Outlet } from "react-router-dom";
 import Navbar from "./Component/Navbar";
 import Header from "./Component/Header";
 import Introduction from "./Component/Introduction";
@@ -7,22 +7,29 @@ import "./app.css"
 import Happenings from "./Component/Happenings";
 import Location from "./Component/Location";
 import Footer from "./Component/Footer";
+import Request from "./Component/Request";
+
+// import Display from "./Component/CarSection";
+
 
 
 function App() {
   
   return (
-      <Router>
-    <div>
-  
+<div>
+     
+  {/* <Display/> */}
       <Navbar />
-      <Header />
+
+       {/* <Outlet/> */}
+        <Header/>
       <Introduction />
-      <Happenings />
+      <Happenings fetchUrl={ Request.fetchCar}/>
       <Location />
-      <Footer/>
-      </div >
-      </Router>
+      <Footer/>  
+       
+       </div> 
+
     )
   
 } 

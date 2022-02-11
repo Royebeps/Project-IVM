@@ -1,26 +1,42 @@
-import React, {useState}  from "react";
+import React, {}  from "react";
 import "./happenings.css";
+import Fetcher from "./axiosHandler";
+import axios from "axios";
 
 
 
 
-function Happenings() {
-    const [count, setCounter] = useState(7);
+function Happenings({fetchUrl}) {
+  
+
+
+
+
+
+    // const [movies, setMovies] = useState([]);
     
-    const increase = () => {
-        setCounter(count + 6);
-    }
-    
+
+//a snipet of code which runs based on a specific condition
+
+// useEffect(() => {
+//     async function fetchData() {
+//     const requests = await axios.get(fetchUrl);
+//     setMovies(requests.data.results)
+//     return requests;
+//     }
+//     fetchData();
+// }, []);
+
     return (
 
 
         <div className="happenings-container">
 
-            <div className="item item-1">
+            <div className="item item-1 ">
              1   
 </div>
-           <div className="item item-2">
-                2
+           <div className="item item-2 ">
+                 
 </div>
            <div className="item item-3">
                3 
@@ -29,10 +45,10 @@ function Happenings() {
               4  
 </div>
             <div className="item item-5">
-                <button onClick={increase}>
+                <button>
 increase 5
                 </button>
-                {count}
+            
             </div>
               <div className="item item-6">
                6
