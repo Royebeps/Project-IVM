@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css"
  
-
+import "./fine car.jpg";
 
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -11,7 +11,7 @@ import "react-slideshow-image/dist/styles.css";
 
 
 const slideImages = [{
-    url: "fine car.jpg",
+    url: require('./fine car.jpg'),
     caption: 'Slide 1'
 },
 {
@@ -22,7 +22,7 @@ const slideImages = [{
     url: 'src/Component/fine car.jpg',
     caption: 'Slide 3'
     },];
-console.log(slideImages[0]['url']);
+
 
 const Header = () => {
     return (
@@ -31,14 +31,8 @@ const Header = () => {
                 {slideImages.map((slideImage, index) => (
                     <div className="each-slide" key={index}>
                         <div style={{
-                            backgroundImage: `url(${slideImages.url})`,
-                            backgroundSize: 'cover',
-                            backgroundRepeat: 'no-repeat',
-                            backgroundPosition: 'center center',
-
-                            height: '83vh',
-                            width: '100%',
-                        }}>
+                            'backgroundImage': `url(${slideImage.url})`}}>
+                            <img alt='him' src={slideImages.url}/>
                             <span>{slideImage.caption}</span>
                         </div>
                     </div>

@@ -12,6 +12,7 @@
   background-position: center center center;
   background-size: cover;
   grid-row: 1/3;
+  border-right: 1px solid black;
 }
 
 .item-2 {

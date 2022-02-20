@@ -1,7 +1,7 @@
 import React, {}  from "react";
 import "./happenings.css";
-import Fetcher from "./axiosHandler";
-import axios from "axios";
+// import Fetcher from "./axiosHandler";
+// import axios from "axios";
 
 
 
@@ -36,7 +36,7 @@ function Happenings({fetchUrl}) {
              1   
 </div>
            <div className="item item-2 ">
-                 
+             2    
 </div>
            <div className="item item-3">
                3 
