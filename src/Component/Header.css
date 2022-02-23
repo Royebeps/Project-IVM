@@ -6,11 +6,20 @@
     ),
     url("philipp-katzenberger-hrpYtJv-BRs-unsplash.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  /* background-repeat: no-repeat; */
+  background-position: center center center center;
 
-  height: 83vh;
+  height: 87vh;
   width: 100%;
+}
+
+.header-caption {
+  position: relative;
+  top: 17em;
+  right: -5em;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  text-shadow: 1px 2px 3px black;
 }
 
 .header-description {

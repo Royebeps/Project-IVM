@@ -1,14 +1,27 @@
-import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import React, { useEffect, useState} from "react"; 
+import { Link, } from "react-router-dom"; 
 import "./Navbar.css";
 
 import logo from "./innoson logo-1.png";
+
 
 function Navbar() {
     
     
         
-  
+    const [show, handleShow] = useState(false);
+
+    useEffect(
+        () => {
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 100) {
+                    handleShow(true);
+                } else handleShow(false);
+            });
+            return () => {
+                window.removeEventListener("scroll");
+            };
+        },[]);
     
     
     
@@ -18,7 +31,7 @@ function Navbar() {
           
             
         <div>
-            <div  className="navbar">
+            <div className={`navbar ${show && "r"}`}>
                 <ul className='navbar-list'>
                     <div className="navbar-logo">
                         <li className="navbar-list-components"><img src={logo} className="logo" alt="logo"></img></li> 

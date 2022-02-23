@@ -7,7 +7,7 @@ import "./app.css"
 import Happenings from "./Component/Happenings";
 import Location from "./Component/Location";
 import Footer from "./Component/Footer";
-import Request from "./Component/Request";
+// import Request from "./Component/Request";
 import SearchBar from "./Component/SearchBox";
 
 // import Display from "./Component/CarSection";
@@ -26,7 +26,7 @@ function App() {
       <Header />
       <SearchBar/>
       <Introduction />
-      <Happenings fetchUrl={ Request.fetchCar}/>
+      <Happenings />
       <Location />
       <Footer/>  
        

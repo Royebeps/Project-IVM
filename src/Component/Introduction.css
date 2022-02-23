@@ -26,10 +26,11 @@
 }
 
 .introduction-box {
-  border: 0.2px rgba(0, 0, 255, 0.5) solid;
+  border: 0.2px rgba(0, 0, 255, 0.09) solid;
   height: 4rem;
   width: 20%;
   padding: 2rem;
+  background-color: rgb(39, 39, 39);
 }
 
 .btn {

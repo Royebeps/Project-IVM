@@ -21,10 +21,10 @@ Our product range from hold o hold on......Lorem ipsum dolor sit amet consectetu
                 <button className="btn"> Our other brands</button>
             </div>
             <div className="center-content">
-                <ul className="list-style"><li className="introduction-box box-2">box2</li>
-                    <li className="introduction-box box-1">box1</li>
-                    <li className="introduction-box box-3">box3</li>
-                    <li className="introduction-box box-4">box4</li>
+                <ul className="list-style"><li className="introduction-box box-2">IVM</li>
+                    <li className="introduction-box box-1">ROY</li>
+                    <li className="introduction-box box-3">Plastics</li>
+                    <li className="introduction-box box-4">Innoson GROUP</li>
                 </ul>
             </div>
 

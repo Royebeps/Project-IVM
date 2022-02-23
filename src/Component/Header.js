@@ -11,17 +11,21 @@ import "react-slideshow-image/dist/styles.css";
 
 
 const slideImages = [{
-    url: require('./fine car.jpg'),
+    url: 'fine car.jpg',
     caption: 'Slide 1'
 },
 {
-    url: 'fine car1.jpg',
+    url: 'fine\ car.jpg',
     caption: 'Slide 2'
 },
 {
     url: 'src/Component/fine car.jpg',
-    caption: 'Slide 3'
-    },];
+    caption: 'this car was a part to the future revolutionized with cutting edge technology'
+    },
+    {
+        url: 'images/slide_4.jpg',
+        caption:'slide 4'
+}];
 
 
 const Header = () => {
@@ -29,11 +33,17 @@ const Header = () => {
         <div className="slide-container">
             <Slide>
                 {slideImages.map((slideImage, index) => (
-                    <div className="each-slide" key={index}>
-                        <div style={{
-                            'backgroundImage': `url(${slideImage.url})`}}>
-                            <img alt='him' src={slideImages.url}/>
-                            <span>{slideImage.caption}</span>
+                    <div className="each-slide header " key={index}>
+                         <div style={{
+                            backgroundImage: `url(${slideImages.url})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center center",
+                            height: "83vh",
+                            width: "100%",
+                            backgroundRepeat:"no-repeat"
+                        }} >
+                            {/* <img alt='him' src={slideImage.url}/> */}
+                            <span className="header-caption">{slideImage.caption}</span>
                         </div>
                     </div>
     ))}

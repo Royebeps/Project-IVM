@@ -28,8 +28,11 @@ function Happenings({fetchUrl}) {
 // }, []);
 
     return (
-
-
+<section>
+        <ul className="happenings-navigator">
+          <li>news<i className="ios-md-bookmarks"></i></li>
+        <li>popular<i className="ios-star-outline"></i></li>
+          <li>videos</li></ul>
         <div className="happenings-container">
 
             <div className="item item-1 ">
@@ -45,9 +48,7 @@ function Happenings({fetchUrl}) {
               4  
 </div>
             <div className="item item-5">
-                <button>
-increase 5
-                </button>
+               5
             
             </div>
               <div className="item item-6">
@@ -62,7 +63,8 @@ increase 5
              <div className="item item-9">
                9999
             </div>
-           </div>
+        </div>
+        </section>
     )
 }
 
