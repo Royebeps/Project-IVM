@@ -1,5 +1,5 @@
 import React from "react";
-// import { BrowserRouter, Route, Routes, Link, Outlet } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link, Outlet } from "react-router-dom";
 import Navbar from "./Component/Navbar";
 import Header from "./Component/Header";
 import Introduction from "./Component/Introduction";
@@ -19,17 +19,26 @@ function App() {
   return (
 <div>
      
-  {/* <Display/> */}
-      <Navbar />
+      {/* <BrowserRouter> 
+    <Routes>
+      <Route path="/" element={<Navbar />} >
+      <Route path="/CarSection" element={<Display />} />
+      </Route>
+   <Outlet/> */}
 
-       {/* <Outlet/> */}
-      <Header />
-      <SearchBar/>
-      <Introduction />
+
+  {/* <Display/>  */}
+     <Navbar />
+
+       {/* <Outlet/>  */}
+       <Header /> 
+       <SearchBar/> 
+       <Introduction /> 
       <Happenings />
       <Location />
       <Footer/>  
-       
+        {/* </Routes>
+    </BrowserRouter> */}
        </div> 
 
     )

@@ -2,22 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
-import Footer from "./Component/Footer";
-import Happenings from "./Component/Happenings";
+// import Footer from "./Component/Footer";
+import Display from "./Component/CarSection";
 import reportWebVitals from './reportWebVitals';
 
+export default function Parts() {
 
-
-ReactDOM.render(
-  <BrowserRouter>
+  return(<BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} >
-      <Route path="/Happenings" element={<Happenings />} />
-      <Route path="/Footer" element={<Footer />} />
-      </Route>
+      <Route path="/" element={<App />} />
+      <Route path="/CarSection" element={<Display />} />
+      {/* <Route path=""> */}
+        
+    {/* </Route> */}
     </Routes>
     
-    </BrowserRouter>,
+    </BrowserRouter>)
+};
+
+ReactDOM.render(
+   <Parts/>,
+  
   document.getElementById('root')
 );
 

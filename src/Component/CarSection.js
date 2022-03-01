@@ -1,4 +1,7 @@
 import React from "react";
+import Navbar from "./Navbar";
+import "./CarSection.css";
+//  import { BrowserRouter, Route, Routes, Link, Outlet } from "react-router-dom";
 
 function Display() {
     const cars = [{
@@ -19,8 +22,19 @@ function Display() {
  
     return (
         <div>
+{/* 
+            <BrowserRouter>
+                <Routes> */}
+{/* <Route path="/CarSection" element={<CarSection />} /> */}
+
+            <Navbar />
+            {/* <Outlet/> */}
+
+                {/* </Routes>
+            </BrowserRouter>
+             */}
             <li>year</li>
-            <li>year</li>
+            <li>year yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</li>
             <li>year</li>
             <li>year</li>
             <li>year</li>

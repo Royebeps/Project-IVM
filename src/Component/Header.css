@@ -9,7 +9,7 @@
   /* background-repeat: no-repeat; */
   background-position: center center center center;
 
-  height: 87vh;
+  height: 83vh;
   width: 100%;
 }
 
@@ -25,6 +25,37 @@
 .header-description {
   color: silver;
 }
+
+.header-intro {
+  border: 1px solid rgba(10, 10, 10, 0.664);
+  cursor: pointer;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.411));
+  padding: 1.5em;
+  border-radius: 4px;
+  font-size: 14px;
+  position: relative;
+  top: 30%;
+
+  transition: all 0.3s;
+}
+
+.header-intro:hover {
+  /* transform: translateY(-1rem) scale(1.2); */
+  border-bottom: 1px blue solid;
+  /* animation: grow 3s ease-in 0.3s; */
+}
+/* 
+@keyframes grow {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+} */
 
 .banner_fade {
   height: 5rem;

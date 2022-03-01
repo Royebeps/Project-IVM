@@ -11,21 +11,33 @@ import "react-slideshow-image/dist/styles.css";
 
 
 const slideImages = [{
-    url: 'fine car.jpg',
-    caption: 'Slide 1'
+    u: 'fine car.jpg',
+    caption: 'Slide 1',
+    intro:'grand IMMORTAL'
+     
 },
 {
-    url: 'fine\ car.jpg',
-    caption: 'Slide 2'
+    u: 'fine\ car.jpg',
+    caption: 'Slide 2',
+    intro:'saviour IMMORTAL'
+     
 },
 {
-    url: 'src/Component/fine car.jpg',
-    caption: 'this car was a part to the future revolutionized with cutting edge technology'
+    u: 'fine car.jpg',
+    caption: 'this car ',
+    intro:'G hahahahahhahahhahahahahhahhaha IMMORTAL' 
+     
     },
     {
-        url: 'images/slide_4.jpg',
-        caption:'slide 4'
-}];
+        u: "backgroundImage: url('fine car.jpg')",
+        caption: 'slide 4',
+        intro:'G IMMORTAL'
+        
+    }];
+
+function underConstruction(){
+    alert("this section is still under construction");
+};
 
 
 const Header = () => {
@@ -33,9 +45,9 @@ const Header = () => {
         <div className="slide-container">
             <Slide>
                 {slideImages.map((slideImage, index) => (
-                    <div className="each-slide header " key={index}>
+                    <div className="each-slide"  key={index}>
                          <div style={{
-                            backgroundImage: `url(${slideImages.url})`,
+                            backgroundImage: `url(${slideImages.u})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center center",
                             height: "83vh",
@@ -44,6 +56,7 @@ const Header = () => {
                         }} >
                             {/* <img alt='him' src={slideImage.url}/> */}
                             <span className="header-caption">{slideImage.caption}</span>
+                            <span className="header-intro" onClick={underConstruction}>{slideImage.intro }</span>
                         </div>
                     </div>
     ))}

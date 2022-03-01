@@ -3,19 +3,19 @@
   padding: 0;
   box-sizing: 0;
 }
+
 .navbar {
   height: 6rem;
-  background-color: rgba(0, 0, 0, 0.801);
+  background-color: rgba(0, 0, 0, 0.9);
   color: silver;
   text-align: center;
-  top: 0;
-  position: fixed;
+  transition: all 2s;
+  /* position: fixed; */
+  /* top: 0; */
+  /* z-index: 1000; */
   width: 100%;
 }
-.r {
-  opacity: 0;
-  transition: all ease-in-out 0.4s;
-}
+
 .navbar-list {
   list-style: none;
   display: flex;
@@ -46,4 +46,15 @@
   height: 3.8rem;
   border-radius: 5px;
   background-blend-mode: saturation;
+  transition: all ease-in-out 0.5s;
+  backface-visibility: hidden;
+  transform: scale(0.95);
+}
+
+.logo:hover {
+  opacity: 0.8;
+  border-left: 0.5px solid rgb(0, 0, 255);
+  border-right: 0.5px solid rgb(0, 0, 255);
+  border-bottom: 0.5px solid rgb(0, 0, 255);
+  transform: scale(01);
 }
